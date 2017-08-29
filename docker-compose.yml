@@ -1,9 +1,9 @@
 
 version: '2'
 services:
-  express:
+  server:
     build:
-      context: ./src
+      context: ./server
       dockerfile: Dockerfile
     env_file:
       - ./environment.env
