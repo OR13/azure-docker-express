@@ -1,8 +1,6 @@
 "use strict";
 
 const express = require("express");
-const registerEndpoints = require("./src/key-vault/endpoints");
-
 // Constants
 const PORT = 3001;
 const HOST = "0.0.0.0";
@@ -30,8 +28,6 @@ app.get("/", (req, res) => {
     boss: process.env.BOSS
   });
 });
-
-registerEndpoints(app);
 
 if (!module.parent) {
   app.listen(PORT, HOST);
