@@ -1,0 +1,12 @@
+
+version: '2'
+services:
+  express:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    env_file:
+      - ./environment.env
+    ports:
+      - "3001:3001"
+
