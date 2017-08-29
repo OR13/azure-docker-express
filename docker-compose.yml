@@ -1,7 +1,7 @@
 
 version: '2'
 services:
-  express:
+  server:
     build:
       context: ./src
       dockerfile: Dockerfile

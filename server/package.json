@@ -2,10 +2,9 @@
   "name": "azure-docker-express",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start" : "node app.js",
-    "test": "mocha"
+    "start": "node app.js",
+    "test": "mocha app.test.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +17,8 @@
   },
   "homepage": "https://github.com/OR13/azure-docker-express#readme",
   "dependencies": {
+    "adal-node": "^0.1.22",
+    "azure-keyvault": "^2.0.1-preview",
     "body-parser": "^1.17.2",
     "chai": "^4.1.1",
     "chai-http": "^3.0.0",
